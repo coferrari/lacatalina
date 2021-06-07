@@ -1,0 +1,40 @@
+/* ------header------ */
+
+.header {
+    position: sticky;
+    top: -115px;
+    z-index: 100;
+
+    .header__logo {
+        position: relative;
+        background: #d8d8d0;
+        color: #2D2D2B;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 15px;
+
+        a {
+            color: #2D2D2B;
+            text-decoration: none;
+            text-align: center;
+        
+            h1 {
+                font-family: 'Rokkitt', serif;
+                font-size: 28px;
+                font-weight: 200;
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 12px;
+                font-weight: 200;
+                letter-spacing: 4px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

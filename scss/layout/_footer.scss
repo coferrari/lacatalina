@@ -1,0 +1,50 @@
+/* ------footer------ */
+.footer {
+    background: #d8d8d0;
+    font-family: 'Lora', serif;
+
+    .footer__socialmedia {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer__socialmedia--principal {
+        p {
+            text-align: center;
+            color: white;
+            padding-right: 10px;
+        }
+    }
+    .footer__socialmedia--secondary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        p {
+            text-align: center;
+            color: white;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    // .footer {
+    //     grid-template-columns: repeat(3, 1fr);
+    //     grid-template-rows: auto;
+
+    //     .footer__copyright {
+    //         grid-column: 2 / 3;
+    //     }
+
+    //     .footer__socialmedia {
+    //         justify-self: center;   
+    //         align-self: center;
+    //         grid-column: 3 / 4;
+    //     }
+    // }
+}
+
+

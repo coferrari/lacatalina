@@ -1,0 +1,16 @@
+@import "base/reset";
+@import "base/typo";
+
+@import "utilities/variables";
+
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/background";
+@import "layout/habitaciones";
+@import "layout/galeria";
+@import "layout/reservas";
+@import "layout/footer";
+
+@import "pages/habitaciones";
+@import "pages/restaurant";
+@import "pages/galeria";

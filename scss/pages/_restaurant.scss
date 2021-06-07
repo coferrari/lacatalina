@@ -1,0 +1,145 @@
+/* ------restaurant.html------ */
+#restaurant {
+    background:white;
+}
+.section_presentation {
+    border-bottom: 1.5px dotted #d8d8d0;
+    padding: 0 0 10px;
+    margin: 0px 75px;
+    h2 {
+        padding: 50px 0px 0px 0px;
+        font-family: 'Oswald', sans-serif;    
+        font-weight: 200;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #2D2D2B;
+    }
+    h4 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 4px;
+        text-transform: lowercase;
+        text-align: center;
+        padding: 0px;
+        color: #2D2D2B;
+    }
+}
+.section_text {
+    list-style-type: none;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Lora', serif;
+    color: #2D2D2B;
+    line-height: 200%;
+    font-size: 14px;
+    transition: .5s ease;
+    opacity: .8;
+}
+.container_gallery {
+    position: relative;
+    column-count: 1;
+    padding: 25px;
+    width: auto;
+    margin: auto;
+    max-width: 1080px;
+}
+.image {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.img {
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+.image:hover img {
+    transform: scale(1.03);
+    opacity: .9;
+}
+.accordion-button {
+    color: #2D2D2B;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: $colorprimary;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-button:focus {
+    border-color: $colorprimary;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none
+}
+.accordion-body {
+    padding: 0rem 1.25rem;
+}
+.accordion-title {
+    font-family: 'Oswald', sans-serif;    
+    font-weight: 200;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #2D2D2B;
+    padding-left: 30px;
+}
+.accordion-title:hover {
+    cursor: pointer;
+}
+.menu-detail {
+    border-bottom: 1.5px dotted #d8d8d0;
+    display: flex;
+    flex-direction: column;
+    
+    h5 {
+        padding-top: 20px;
+        font-family: 'Oswald', sans-serif;    
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #2D2D2B;
+    }
+    p {
+        font-family: 'Lora', serif;
+        font-size: 12px;
+        color: #2D2D2B;
+        letter-spacing: 1px;
+    }
+}
+.menu-optional {
+    text-align: center;
+    div {
+        background-color: $colorprimary;
+        opacity: .5;
+        z-index: -1;
+    }
+    p {
+        font-family: 'Lora', serif;
+        font-size: 13px;
+        color: #2D2D2B;
+        letter-spacing: 1px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container_gallery {
+        column-count: 2;
+    }
+    .container-accordion {
+        width: auto;
+        margin: auto;
+        max-width: 1080px;
+    }
+    .body-grid {
+        position: relative;
+        column-count: 2;
+        padding: 10px 25px 0px 25px;
+        width: auto;
+        margin: auto;
+        max-width: 1080px;
+    }
+}
