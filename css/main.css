@@ -429,7 +429,8 @@ template {
   font-size: 18px;
   letter-spacing: 6px;
   color: white;
-  transition: .2s ease; }
+  transition: .2s ease;
+  cursor: pointer; }
 
 /* ------habitaciones------ */
 .habitaciones {
@@ -665,7 +666,7 @@ template {
   background-color: #EDE9DE;
   position: relative;
   height: 250px;
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -674,13 +675,22 @@ template {
   height: 100px;
   position: absolute; }
 
+@media only screen and (min-width: 768px) {
+  .img_logoborder {
+    padding-top: 0px; }
+  .img_logo {
+    height: 130px; }
+  .img_logocontainer {
+    height: 300px;
+    width: 400px; } }
+
 @media only screen and (min-width: 1024px) {
   .nosotros_section {
     flex-direction: row; }
   .img_logoborder {
     padding: 50px; }
   .img_logo {
-    height: 130px; }
+    height: 150px; }
   .img_logocontainer {
     height: 350px;
     width: 450px; } }
@@ -738,23 +748,34 @@ table {
   padding: 50px; }
 
 .services {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  background-color: #D8D8D0; }
-  .services .services-detail {
-    align-content: center;
-    color: white;
-    text-transform: uppercase; }
-    .services .services-detail img {
-      width: 75px; }
-
-.carousel-background {
-  background-color: teal; }
-
-.coquito {
-  width: 150px;
+  background-color: white;
   padding: 50px; }
+  .services .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #D8D8D0; }
+    .services .services-container .services-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      padding: 20px; }
+      .services .services-container .services-detail img {
+        width: 50px;
+        margin: 20px; }
+
+.bground {
+  height: 95vh;
+  width: 300px; }
+  .bground .img {
+    position: absolute; }
+    .bground .img .img-left {
+      left: 0px; }
+    .bground .img .img-right {
+      right: 0px; }
 
 /* ------restaurant.html------ */
 #restaurant {

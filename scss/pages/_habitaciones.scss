@@ -52,31 +52,53 @@ table {
     padding: 50px;
 }
 
-
 .services {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    background-color: $colorprimary;
-    
-    .services-detail {
-        align-content: center;
-        color: white;
-        text-transform: uppercase;
+    background-color: white;
+    padding: 50px;
+    .services-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: $colorprimary;
         
-        img {
-            width: 75px;
+        .services-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-transform: uppercase;
+            padding: 20px;
+            
+            img {
+                width: 50px;
+                margin: 20px;
+            }
         }
     }
 }
 
-.carousel-background {
-    background-color:teal;
+.bground {
+    height: 95vh;
+    width: 300px;
+
+    .img {
+        position: absolute;
+
+        .img-left {
+            left: 0px;
+    
+        }
+        .img-right {
+            right: 0px;
+    
+        }
+    }
+
+
+
 }
 
-.coquito {
-    width: 150px;
-    padding: 50px;
-}
+
 
 
