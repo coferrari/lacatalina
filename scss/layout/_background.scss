@@ -27,8 +27,10 @@
 }
 
 .booknow:hover {
-    background-color: $colorprimary;
+    font-size: 18px;
+    letter-spacing: 6px;
     color: white;
+    transition: .2s ease;
 }
 
 

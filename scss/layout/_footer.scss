@@ -10,9 +10,13 @@
     }
     .footer__socialmedia--principal {
         p {
-            text-align: center;
+            font-family: 'Rokkitt', serif;
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
             color: white;
-            padding-right: 10px;
         }
     }
     .footer__socialmedia--secondary {
@@ -26,25 +30,11 @@
             padding-right: 10px;
         }
     }
+    .footer_logo {
+        height: 40px;
+        padding: 5px;
+    }
 }
 
-
-
-@media only screen and (min-width: 768px) {
-    // .footer {
-    //     grid-template-columns: repeat(3, 1fr);
-    //     grid-template-rows: auto;
-
-    //     .footer__copyright {
-    //         grid-column: 2 / 3;
-    //     }
-
-    //     .footer__socialmedia {
-    //         justify-self: center;   
-    //         align-self: center;
-    //         grid-column: 3 / 4;
-    //     }
-    // }
-}
 
 
