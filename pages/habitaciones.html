@@ -8,12 +8,17 @@
     <meta name="description" content="La Catalina, hotel boutique en Pinamar Norte, Argentina">
     <meta name="keywords" content="la catalina, pinamar, costa argentina, playa, casa en la playa, pinamar norte, hotel boutique, vacaciones, turismo, bosque, beach house">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS File -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     
     <!-- Libraries CSS Files -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="../css/main.css">
@@ -22,238 +27,274 @@
     <link rel="icon" href="../img/head_icono.ico">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-                <a href="../index.html">
-                    <h1>La Catalina</h1>
-                    <h2>beach house</h2>
-                </a>
-        </div>
-        <nav class="navbar sticky-top menu navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav menu__navigation mx-auto">
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item menu__item dropdown">
-                        <a class="nav-link dropdown-toggle" href="habitaciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Habitaciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="habitaciones.html#habitacion1">Habitación 1</a></li>
-                          <li><a class="dropdown-item" href="habitaciones.html#habitacion2">Habitación 2</a></li>
-                          <li><a class="dropdown-item" href="habitaciones.html#habitacion3">Habitación 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="restaurant.html">Restaurant</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="reservas.html">Reservas</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-          </nav>
-    </header>
-
-
-
-
-
-
-  <section id="habitacion1">
-      <div class="habitaciones prueba">
-          <div id="hab-container">
-            <div class="rooms space">
-                <div class="card" style="width: 22rem;">
-                    <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card" style="width: 22rem;">
-                    <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card" style="width: 22rem;">
-                    <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-                </div>
-            </div>
-          </div>
-      </div>
-  </section>
-  <section id="habitacion2">
-    <div class="habitaciones prueba">
-        <div id="hab-container">
-          <div class="rooms space">
-              <div class="card" style="width: 22rem;">
-                  <img src="../img/habitaciones_hab2.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card" style="width: 22rem;">
-                  <img src="../img/habitaciones_hab2.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card" style="width: 22rem;">
-                  <img src="../img/habitaciones_hab2.jpg" class="card-img-top" alt="...">
-              </div>
-          </div>
-        </div>
-    </div>
-</section>
-<section id="habitacion3">
-  <div class="habitaciones prueba">
-      <div id="hab-container">
-        <div class="rooms space">
-            <div class="card" style="width: 22rem;">
-                <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card" style="width: 22rem;">
-                <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card" style="width: 22rem;">
-                <img src="../img/habitaciones_hab1.jpg" class="card-img-top" alt="...">
-            </div>
-        </div>
-      </div>
+<!-- Empieza barra de menú -->
+<header class="header">
+  <div class="header__logo">
+    <a class="animate__animated animate__fadeIn" href="../index.html">
+      <h1>La Catalina</h1>
+      <h2>beach house</h2>
+    </a>
   </div>
-</section>
+  <nav class="navbar sticky-top menu navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav menu__navigation mx-auto">
+                <li class="nav-item menu__item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item menu__item dropdown">
+                  <a class="nav-link dropdown-toggle" href="habitaciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Habitaciones
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="habitaciones.html#king">king</a></li>
+                    <li><a class="dropdown-item" href="habitaciones.html#queen">queen</a></li>
+                    <li><a class="dropdown-item" href="habitaciones.html#twin">twin</a></li>
+                    <li><a class="dropdown-item" href="habitaciones.html#glamping">Glamping</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item menu__item">
+                  <a class="nav-link" href="restaurant.html">Restaurant</a>
+                </li>
+                <li class="nav-item menu__item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item menu__item">
+                  <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item menu__item">
+                  <a class="nav-link" href="reservas.html">Reservas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  </nav>
+</header>
+<!-- Termina barra de menú -->
 
 
 
-
-
-
-
-<section class="conditions">
-  <h4>Condiciones generales</h4>
-    <div class="conditions__tabla">
-        <table>
-            <tr>
-                <td>Entrada</td>
-                <td>A partir de las 15hs</td>
-            </tr>
-            <tr>
-                <td>Salida</td>
-                <td>Hasta las 12hs</td>
-            </tr>
-            <tr>
-                <td>Condiciones</td>
-                <td>Solo adultos</td>
-            </tr>
-            <tr>
-                <td>Internet</td>
-                <td>Free wifi</td>
-            </tr>
-            <tr>
-                <td>Mascotas</td>
-                <td>Dog friendly</td>
-            </tr>
-            <tr>
-                <td>Cargos adicionales</td>
-                <td>
-                    <ul>
-                        <li>Masajes</li>
-                        <li>Lavandería</li>
-                        <li>Early check-in</li>
-                        <li>Late check-out</li>
-                    </ul></td>
-            </tr>
-            <tr>
-                <td>Medios de pago</td>
-                <td><ul>
-                    <li>Tarjetas de crédito</li>
-                    <li>Mercado Pago</li>
-                    <li>Paypal</li>
-                </ul></td>
-            </tr>
-        </table>
-    </div>
-</section>
-
+<!-- Empieza habitaciones.html -->
     <section>
-      <div class="services">
-        <div class="services-container">
-          <div class="services-detail">
-              <div><img class="icon" src="../img/icon beach.svg" alt=""></div>
-              <div>beach access</div>
+      <div class="container_gallery">
+        <div id="king">
+          <div class="image">
+            <img class="img" src="../img/habitaciones_hab1.jpg" alt="">
           </div>
-          <div class="services-detail">
-              <div><img class="icon" src="../img/icon wifi.svg" alt=""></div>
-              <div>free wifi</div>
-          </div>
-          <div class="services-detail">
-              <div><img class="icon" src="../img/icon pet.svg" alt=""></div>
-              <div>pet friendly</div>
-          </div>
-          <div class="services-detail">
-            <div><img class="icon" src="../img/icon waves.svg" alt=""></div>
-            <div>beach access</div>
+          <div class="image-description">
+            <div>
+              <h4>king</h4>
+              <ul class="hab-description">
+                <li>Capacidad: hasta 2 personas</li>
+                <li>Cama king size</li>
+                <li>Baño privado</li>
+                <li>Vista al bosque</li>
+              </ul>
+            </div>
+            <div class="reservar">
+              <a href="../pages/reservas.html">reservar</a>
+            </div>
         </div>
-        <div class="services-detail">
-            <div><img class="icon" src="../img/icon bed.svg" alt=""></div>
-            <div>free wifi</div>
         </div>
-        <div class="services-detail">
-            <div><img class="icon" src="../img/icon_restaurant.svg" alt=""></div>
-            <div>dog friendly</div>
+
+        <div id="twin">
+          <div class="image">
+            <img class="img" src="../img/habitaciones_hab2.jpg" alt="">
+          </div>
+          <div class="image-description">
+            <h4>twin</h4>
+            <ul class="hab-description">
+              <li>Capacidad: hasta 2 personas</li>
+              <li>2 camas twin size</li>
+              <li>Baño privado</li>
+              <li>Vista a la pileta</li>
+            </ul>
+            <div class="reservar">
+              <a href="../pages/reservas.html">reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="queen">
+          <div class="image">
+            <img class="img" src="../img/habitaciones_hab3.jpg" alt="">
+          </div>
+          <div class="image-description">
+            <h4>queen</h4>
+            <ul class="hab-description">
+              <li>Capacidad: hasta 2 personas</li>
+              <li>Cama queen size</li>
+              <li>Baño privado</li>
+              <li>Vista a la pileta</li>
+            </ul>
+            <div class="reservar">
+              <a href="../pages/reservas.html">reservar</a>
+            </div>
+          </div>
+
+        <div id="glamping">
+          <div class="image">
+            <img class="img" src="../img/habitaciones_glamping.jpg" alt="">
+          </div>
+          <div class="image-description">
+            <h4>glamping</h4>
+            <ul class="hab-description">
+              <li>Capacidad: hasta 2 personas</li>
+              <li>Cama queen size</li>
+              <li>Baño privado</li>
+              <li>Disponible en temporada verano</li>
+            </ul>
+            <div class="reservar">
+              <a href="../pages/reservas.html">reservar</a>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
+    </section>
+
+    <div class="section_text">
+      <p>Vas a disfrutar de:</p>
+    </div>
 
 
-
-
-    <!-- <section id="reservas">
-      <div class="reservas container-fluid">
-          <div class="reservas__texto">
-          <h3>Reservas</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <div id="owl-carousel">
+      <div class="row carousel-bg">
+        <div class="large-12 columns carousel-size">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="icon" src="../img/icon breakfast.svg" alt="">
+              <div class="item-text">desayuno incluído</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon beach.svg" alt="">
+              <div class="item-text">acceso a la playa</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon wifi.svg" alt="">
+              <div class="item-text">wifi ilimitado</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon pet.svg" alt="">
+              <div class="item-text">dog friendly</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon pool.svg" alt="">
+              <div class="item-text">pileta descubierta</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_bar.svg" alt="">
+              <div class="item-text">cocktail bienvenida</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon waves.svg" alt="">
+              <div class="item-text">mar a 200mts</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_restaurant.svg" alt="">
+              <div class="item-text">room service</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon bed.svg" alt="">
+              <div class="item-text">sábanas algodón</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_shower.svg" alt="">
+              <div class="item-text">ducha exterior</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_laptop.svg" alt="">
+              <div class="item-text">home office</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_grill.svg" alt="">
+              <div class="item-text">parrilla exterior</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_person_white_24dp.svg" alt="">
+              <div class="item-text">solo adultos</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_laundry.svg" alt="">
+              <div class="item-text">laundry con cargo</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_earlycheckin.svg" alt="">
+              <div class="item-text">early check-in</div>
+            </div>
+            <div class="item">
+              <img class="icon" src="../img/icon_latecheckout.svg" alt="">
+              <div class="item-text">late check-out</div>
+            </div>
           </div>
-          <div class="reservas__form container">
-              <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
-                  <label for="floatingInput">Nombre y Apellido</label>
-              </div>
-              <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating mb-3">
-                  <input type="number" class="form-control" id="floatingInput" placeholder="Teléfono">
-                  <label for="floatingInput">Teléfono</label>
-              </div>
-              <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Asunto">
-                  <label for="floatingInput">Asunto</label>
-              </div>
-              <div class="form-floating">
-                  <textarea class="form-control" placeholder="Dejanos tu mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Mensaje</label>
-              </div>
-              <div class="col-12">
-                  <button class="btn btn-primary btn-primary--form" type="submit">Enviar</button>
-              </div>
-          </div>
+        </div>
       </div>
-  </section> -->
+    </div>
+
+  <div class="habitaciones">
+    <div id="hab-container">
+      <div class="rooms">
+          <div class="card" style="width: 24rem;">
+            <img src="../img/habitaciones_1.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card" style="width: 24rem;">
+            <img src="../img/habitaciones_2.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card" style="width: 24rem;">
+            <img src="../img/habitaciones_3.jpg" class="card-img-top" alt="...">
+          </div>  
+      </div>
+    </div>
+</div>
+</section>
+<!-- Termina habitaciones.html -->
+
+<!-- Empieza btn back to top-->
+<div class="backtotop animate__animated animate__fadeInUp">
+  <a href="#"><img src="../img/expand_less_colorborderwhite.svg" alt=""></a>
+</div>
+<!-- Termina btn back to top-->
+
+<!-- Empieza footer-->
   <footer class="footer">
-    <div class="footer__socialmedia">
+    <div class="footer__flex">
+      <div class="footer__flex-item">
+        <h5>la catalina</h5>
+        <ul>
+          <li>Rodeados de naturaleza, comodidades y buena comida, somos el lugar perfecto para tus próximas vacaciones.</li>
+          <li>¡Descubrinos!</li>
+        </ul>
+      </div>
+      <div class="footer__flex-item">
+        <h5>contactanos</h5>
+        <ul>
+          <li>Pinamar Norte</li>
+          <li>Buenos Aires, Argentina</li>
+          <li>lacatalinabeachhouse@gmail.com</li>
+        </ul>
         <div class="footer__socialmedia--secondary">
-            <p>See you on the next wave</p>
-            <div>
-                <p>|</p>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">
-                <img src="../img/footer_instagram.png" alt=""></a>
-            </div>
-        </div>
+          <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">@lacatalinabeachhouse</a>
+          <div>
+              <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">
+              <img class="footer__img" src="../img/icon_instagram.png" alt=""></a>
+          </div>
+      </div>
+      </div>
+      <div class="footer__flex-item">
+        <h5>newsletter</h5>
+        <ul>
+          <li>Si querés suscribirte a nuestro newsletter semanal con novedades, dejanos tu mail</li>
+        </ul>
+        <form class="footer__flex-form" action="" method="post">
+          <input type="email" class="footer__flex-email" name="email" placeholder="name@example.com">
+          <input type="submit" class="footer__flex-button" value="Suscribite">
+        </form>
+
+      </div>
+    </div>
+    <div class="footer__socialmedia">
         <div class="footer__socialmedia--principal">
             <div>
                 <img class="footer_logo" src="../img/footer_logo.png" alt="">
@@ -262,9 +303,13 @@
         </div>
     </div>
   </footer>
+<!-- Termina footer-->
 
   <!-- JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
 </body>
 </html>

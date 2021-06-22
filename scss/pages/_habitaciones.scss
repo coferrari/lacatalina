@@ -1,104 +1,125 @@
-.habs {
-    background-color: $colorprimary;
-}
-.habitacion1 {
+/* ------habitaciones------ */
+
+// owl-caroulsel 
+.item {
     display: flex;
     flex-direction: column;
-}
-.size {
-    width: 30vw;
-    padding: 20px;
-}
-.habs__texto {
-    background-color: white;
-    opacity: .8;
-    display: block;
-    position: absolute;
-    padding: 10px 100px;
-    top: 350px;
-    left: 200px;
-}
-.prueba {
-    background-color: $colorprimary;
-    padding: 10px;
-}
-
-.space {
-    background-color: white;
-    padding: 40px 5px;
-}
-.conditions {
-    background-color: white;
-    display: block;
     justify-content: center;
-}
-h4 {
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 40px 40px 0px 40px;
-}
-table {
-    padding: 15px;
-    font-family: 'Lora', serif;
-    color: #2D2D2B;
-    letter-spacing: 0;
-}
-.conditions__tabla {
-    background-color: white;
-    display: block;
-    padding: 50px;
+    align-items: center;
+    position: relative;
+
+    div img {
+        background-color: $colorsecondary;
+    }
+    .item-text {
+        color: white;
+        font-family: 'Lora', serif;
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 10px 0px;
+        width: 90px;
+        text-align: center;
+        top: 50%;
+        margin: auto;
+    }
 }
 
-.services {
+.icon {
+    height: 50px;
+}
+.carousel-bg {
+    background-color: #9B9A8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.carousel-size {
+    max-width: 1024px;
+    padding: 60px 0px 30px 0px;
+}
+
+.image-description {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    h4 {
+        padding: 5px 0px 10px 40px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #2D2D2B;
+        border-bottom: 2px solid $colorprimary;
+    }
+    .hab-description {
+        list-style-type: disc;
+        font-family: 'Lora', serif;
+        color: #2D2D2B;
+        font-size: 15px;
+        line-height: 180%;
+        opacity: .9;
+    }
+}
+
+.reservar {
+    background-color: #9B9A8E;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+.reservar:hover {
+    background-color: $colorprimary;
+    cursor: pointer;
+}
+
+.habitaciones {
     background-color: white;
-    padding: 50px;
-    .services-container {
-        display: flex;
+
+}
+.rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+}
+
+#hab-container {
+    padding: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    #habitaciones {
+        width: 100vw;
+        height: 100vh;  
+    }
+    #hab-container {
+        flex-direction: row;
+        padding: 40px;
+        gap: 20px;
+    }
+    .rooms {
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
-        background-color: $colorprimary;
-        
-        .services-detail {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: white;
-            text-transform: uppercase;
-            padding: 20px;
-            
-            img {
-                width: 50px;
-                margin: 20px;
-            }
-        }
     }
 }
-
-.bground {
-    height: 95vh;
-    width: 300px;
-
-    .img {
-        position: absolute;
-
-        .img-left {
-            left: 0px;
-    
-        }
-        .img-right {
-            right: 0px;
-    
-        }
-    }
-
-
-
-}
-
 
 
 

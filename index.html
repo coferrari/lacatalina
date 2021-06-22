@@ -8,10 +8,15 @@
     <meta name="description" content="La Catalina, hotel boutique en Pinamar Norte, Argentina">
     <meta name="keywords" content="la catalina, pinamar, costa argentina, playa, casa en la playa, pinamar norte, hotel boutique, vacaciones, turismo, bosque, beach house">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS File -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     
     <!-- Libraries CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="css/main.css">
@@ -21,73 +26,139 @@
     
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-                <a href="index.html">
-                    <h1>La Catalina</h1>
-                    <h2>beach house</h2>
-                </a>
-        </div>
-        <nav class="navbar sticky-top menu navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav menu__navigation mx-auto">
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item menu__item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Habitaciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="./pages/habitaciones.html#habitacion1">Habitación 1</a></li>
-                          <li><a class="dropdown-item" href="./pages/habitaciones.html#habitacion2">Habitación 2</a></li>
-                          <li><a class="dropdown-item" href="./pages/habitaciones.html#habitacion3">Habitación 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" aria-current="page" href="./pages/restaurant.html">Restaurant</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="./pages/ubicacion.html">Ubicación</a>
-                      </li>
-                      <li class="nav-item menu__item">
-                        <a class="nav-link" href="./pages/reservas.html">Reservas</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-          </nav>
-    </header>
-    <section class="background">
-        <div class="source">
-            <video class="videobg" autoplay muted loop>
-                <source src="./img/background_videoprueba.mp4" type=video/mp4>
-            </video>
-        </div>
-        <div>
-            <a class="booknow" href="./pages/reservas.html">viví la experiencia</a>
-        </div>
-    </section>
+<!-- Empieza barra de menú -->
+<header class="header">
+  <div class="header__logo">
+    <a class="animate__animated animate__fadeIn" href="index.html">
+        <h1>La Catalina</h1>
+        <h2>beach house</h2>
+    </a>
+  </div>
+  <nav class="navbar sticky-top menu navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav menu__navigation mx-auto">
+          <li class="nav-item menu__item">
+            <a class="nav-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item menu__item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Habitaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./pages/habitaciones.html#king">king</a></li>
+              <li><a class="dropdown-item" href="./pages/habitaciones.html#queen">queen</a></li>
+              <li><a class="dropdown-item" href="./pages/habitaciones.html#twin">twin</a></li>
+              <li><a class="dropdown-item" href="./pages/habitaciones.html#glamping">Glamping</a></li>
+            </ul>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" aria-current="page" href="./pages/restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./pages/ubicacion.html">Ubicación</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Termina barra de menú -->
 
+<!-- Empieza alert & offcanvas-->
+<div class="alert alert-warning alertcovid animate__animated animate__slideInDown" role="alert" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+  <div class="alertcovid-text">Click aquí para conocer nuestro protocolo COVID-19</div>
+  <button class="btn-covid" data-bs-dismiss="alert" aria-label="Close"><img src="./img/close_white_24dp.svg" alt=""></button>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Protocolo COVID-19</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li>Su bienestar y seguridad siempre han sido y serán nuestra prioridad. </li>
+      <li>En este momento estamos cuidando de nuestros huéspedes, empleados y la comunidad que nos rodea implementando medidas preventivas para que nuestro hotel permanezca sin COVID-19.</li>
+      <li>Seguimos los protocolos más estrictos para evitar riesgos de contagio.</li>
+      <li>Queremos que se sienta como en casa y seguro cuando se quede con nosotros.</li>
+      <li>Nuestro hotel es un pequeño hotel boutique sin riesgo de aglomeración.</li>
+      <div>Si tiene más preguntas sobre nuestra respuesta al coronavirus, no dude en escribirnos. Estaremos encantados de responder a sus consultas.</div>
+    </ul>
+    <div class="imgcovid">
+      <img src="./img/nosotros_logo.png" alt="">
+    </div>
+  </div>
+</div>
+<!-- Termina alert & offcanvas-->
+
+<!-- Empieza home-->
+<div class="background">
+  <div class="source">
+      <video class="videobg" autoplay muted loop>
+          <source src="./img/background_videoprueba.mp4" type=video/mp4>
+      </video>
+  </div>
+  <div class="animate__animated animate__zoomIn">
+      <a class="booknow" href="./pages/reservas.html">viví la experiencia</a>
+  </div>
+</div>
+<!-- Termina home-->
+
+<!-- Empieza btn back to top-->
+<div class="backtotop animate__animated animate__fadeInUp">
+  <a href="#"><img src="./img/expand_less_colorborderwhite.svg" alt=""></a>
+</div>
+<!-- Termina btn back to top-->
+
+<!-- Empieza footer-->
     <footer class="footer">
-      <div class="footer__socialmedia">
+      <div class="footer__flex">
+        <div class="footer__flex-item">
+          <h5>la catalina</h5>
+          <ul>
+            <li>Rodeados de naturaleza, comodidades y buena comida, somos el lugar perfecto para tus próximas vacaciones.</li>
+            <li>¡Descubrinos!</li>
+          </ul>
+        </div>
+        <div class="footer__flex-item">
+          <h5>contactanos</h5>
+          <ul>
+            <li>Pinamar Norte</li>
+            <li>Buenos Aires, Argentina</li>
+            <li>lacatalinabeachhouse@gmail.com</li>
+          </ul>
           <div class="footer__socialmedia--secondary">
-              <p>See you on the next wave</p>
-              <div>
-                  <p>|</p>
-              </div>
-              <div>
-                  <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">
-                  <img src="./img/footer_instagram.png" alt=""></a>
-              </div>
-          </div>
+            <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">@lacatalinabeachhouse</a>
+            <div>
+                <a href="https://www.instagram.com/lacatalinabeachhouse/" target="_BLANK">
+                <img class="footer__img" src="./img/icon_instagram.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer__flex-item">
+          <h5>newsletter</h5>
+          <ul>
+            <li>Si querés suscribirte a nuestro newsletter semanal con novedades, dejanos tu mail</li>
+          </ul>
+          <form class="footer__flex-form" action="" method="post">
+            <input type="email" class="footer__flex-email" name="email" placeholder="name@example.com">
+            <input type="submit" class="footer__flex-button" value="Suscribite">
+          </form>
+
+        </div>
+      </div>
+      <div class="footer__socialmedia">
           <div class="footer__socialmedia--principal">
               <div>
                   <img class="footer_logo" src="./img/footer_logo.png" alt="">
@@ -96,7 +167,11 @@
           </div>
       </div>
     </footer>
+<!-- Termina footer-->
 
+
+    <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
 </body>
 </html>

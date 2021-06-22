@@ -1,30 +1,18 @@
-/* ------restaurant.html------ */
+/* ------restaurant------ */
 #restaurant {
     background:white;
 }
+
 .section_presentation {
     border-bottom: 1.5px dotted #d8d8d0;
     padding: 0 0 10px;
     margin: 0px 75px;
-    h2 {
-        padding: 50px 0px 0px 0px;
-        font-family: 'Oswald', sans-serif;    
-        font-weight: 200;
-        font-size: 20px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-align: center;
-        color: #2D2D2B;
-    }
-    h4 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 16px;
-        font-weight: 200;
-        letter-spacing: 4px;
-        text-transform: lowercase;
-        text-align: center;
-        padding: 0px;
-        color: #2D2D2B;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 180px;
+        padding-top: 20px;
     }
 }
 .section_text {
@@ -47,11 +35,13 @@
     max-width: 1080px;
 }
 .image {
+    position: relative;
     display: inline-block;
     margin-bottom: 10px;
     overflow: hidden;
 }
 .img {
+    position: relative;
     width: 100%;
     transition: 0.25s ease-in-out;
 }
@@ -105,7 +95,7 @@
     }
     p {
         font-family: 'Lora', serif;
-        font-size: 12px;
+        font-size: 13px;
         color: #2D2D2B;
         letter-spacing: 1px;
     }

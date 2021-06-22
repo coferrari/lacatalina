@@ -1,64 +1,92 @@
 /* ------nosotros------ */
 
-.nosotros_section {
+.nosotros {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-}
-.section_container {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-.img_logoborder {
-    padding: 0px;
-    padding-bottom: 50px;
 }
 
-.img_logocontainer {
-    background-color: $colorsecondary;
-    position: relative;
-    height: 250px;
-    width: 350px;
+.overlapse {
+    width: 90%;
+    max-width: 1024px;
     display: flex;
-    justify-content: center;
+    margin: 100px 0px 100px 0px;
+    padding: 30px;
+    gap: 100px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    z-index: -10;
+    background-color: #9B9A8E;
 }
-.img_logo {
-    height: 100px;
-    position: absolute;
+
+.left {
+    width: 100%;
+    height: 600px;
+    margin: -150px;
 }
+
+.overlapse-image-one {
+    background: url(../img/galeria_pinos.jpg) no-repeat center / cover;
+}
+
+.overlapse-image-two {
+    background: url(../img/galeria_pastas2.jpg) no-repeat center / cover;
+    z-index: -1;
+}
+
+.overlapse-image-three {
+    background: url(../img/galeria_3.jpg) no-repeat center / cover;
+}
+
+.overlapse-text {
+    width: 80%;
+    margin-top: -100px;
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #2D2D2B;
+    line-height: 200%;
+    font-size: 14px;
+    padding: 20px;
+}
+
 
 @media only screen and (min-width: 768px) {
 
-    .img_logoborder {
-        padding-top: 0px;
+    .overlapse-row {
+        flex-direction: row;
     }
-    .img_logo {
-        height: 130px;
+    .overlapse-rowreverse {
+        flex-direction: row-reverse;
     }
-    .img_logocontainer {
-        height: 300px;
-        width: 400px;
+    .left {
+        width: 60%;
+    }
+    .text-right {
+        width: 50%;
+        margin: 0;
+        margin-left: -100px;
+    }
+    .text-left {
+        width: 50%;
+        margin: 0;
+        margin-right: -100px;
     }
 }
 
+
+
 @media only screen and (min-width: 1024px) {
-    .nosotros_section {
-        flex-direction: row;
-    }
-    .img_logoborder {
-        padding: 50px;
-    }
-    .img_logo {
-        height: 150px;
-    }
-    .img_logocontainer {
-        height: 350px;
-        width: 450px;
-    }
+
 }
+
+
 

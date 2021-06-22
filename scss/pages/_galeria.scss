@@ -1,6 +1,19 @@
+/* ------galeria------ */
 
+.gallery-gap {
+    padding-top: 15px;
+}
+
+.gallery-colums {
+    column-count: 1;
+}
 
 @media only screen and (min-width: 768px) {
+    .gallery-colums {
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 861px) {
     .gallery-colums {
         column-count: 3;
     }

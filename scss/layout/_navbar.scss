@@ -23,7 +23,6 @@
                 transition: 200ms ease-in-out;
                 color: white;
             }
-
             .menu__subitem {
                 list-style-type: none;
                 display: flex;
@@ -66,7 +65,7 @@
     box-shadow: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .menu {
         align-items: center;
         padding: 2px;
