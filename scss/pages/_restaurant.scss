@@ -1,10 +1,10 @@
 /* ------restaurant------ */
 #restaurant {
-    background:white;
+    background: $colorbg;
 }
 
 .section_presentation {
-    border-bottom: 1.5px dotted #d8d8d0;
+    border-bottom: 1.5px dotted $colorprimary;
     padding: 0 0 10px;
     margin: 0px 75px;
     display: flex;
@@ -19,10 +19,8 @@
     list-style-type: none;
     text-align: center;
     padding: 30px;
-    font-family: 'Lora', serif;
-    color: #2D2D2B;
+    @include fontLora ($colortext, 14px, 0);
     line-height: 200%;
-    font-size: 14px;
     transition: .5s ease;
     opacity: .8;
 }
@@ -50,12 +48,12 @@
     opacity: .9;
 }
 .accordion-button {
-    color: #2D2D2B;
+    color: $colortext;
 }
 .accordion-button:not(.collapsed) {
-    color: white;
+    color: $colorbg;
     background-color: $colorprimary;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 -1px 0 $colortertiary
 }
 .accordion-button:focus {
     border-color: $colorprimary;
@@ -68,36 +66,26 @@
     padding: 0rem 1.25rem;
 }
 .accordion-title {
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 13px;
-    letter-spacing: 4px;
+    @include fontOswald ($colortext, 13px, 4px);
     text-transform: uppercase;
-    color: #2D2D2B;
     padding-left: 30px;
 }
 .accordion-title:hover {
     cursor: pointer;
 }
 .menu-detail {
-    border-bottom: 1.5px dotted #d8d8d0;
+    border-bottom: 1.5px dotted $colorprimary;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
     
     h5 {
+        @include fontOswald ($colortext, 13px, 4px);
         padding-top: 20px;
-        font-family: 'Oswald', sans-serif;    
-        font-weight: 300;
-        font-size: 13px;
-        letter-spacing: 4px;
         text-transform: uppercase;
-        color: #2D2D2B;
     }
     p {
-        font-family: 'Lora', serif;
-        font-size: 13px;
-        color: #2D2D2B;
-        letter-spacing: 1px;
+        @include fontLora ($colortext, 14px, 1px);
     }
 }
 .menu-optional {
@@ -108,10 +96,7 @@
         z-index: -1;
     }
     p {
-        font-family: 'Lora', serif;
-        font-size: 13px;
-        color: #2D2D2B;
-        letter-spacing: 1px;
+        @include fontLora ($colortext, 14px, 1px);
         padding: 20px;
     }
 }
@@ -124,6 +109,9 @@
         margin: auto;
         max-width: 1080px;
     }
+}
+
+@media only screen and (min-width: 1024px) {
     .body-grid {
         position: relative;
         column-count: 2;
@@ -131,5 +119,8 @@
         width: auto;
         margin: auto;
         max-width: 1080px;
+    }
+    .menu-detail {
+        padding-left: 0px;
     }
 }

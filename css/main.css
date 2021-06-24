@@ -475,7 +475,8 @@ template {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  font-size: 16px; }
+  font-size: 16px;
+  border-radius: 0; }
 
 .alertcovid-text {
   opacity: .9;
@@ -799,7 +800,7 @@ h4 {
   background: white; }
 
 .section_presentation {
-  border-bottom: 1.5px dotted #d8d8d0;
+  border-bottom: 1.5px dotted #D8D8D0;
   padding: 0 0 10px;
   margin: 0px 75px;
   display: flex;
@@ -813,9 +814,11 @@ h4 {
   text-align: center;
   padding: 30px;
   font-family: 'Lora', serif;
+  font-weight: 200;
   color: #2D2D2B;
-  line-height: 200%;
   font-size: 14px;
+  letter-spacing: 0;
+  line-height: 200%;
   transition: .5s ease;
   opacity: .8; }
 
@@ -848,7 +851,7 @@ h4 {
 .accordion-button:not(.collapsed) {
   color: white;
   background-color: #D8D8D0;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
+  box-shadow: inset 0 -1px 0 #9B9A8E; }
 
 .accordion-button:focus {
   border-color: #D8D8D0;
@@ -862,32 +865,34 @@ h4 {
 
 .accordion-title {
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  color: #2D2D2B;
   font-size: 13px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #2D2D2B;
   padding-left: 30px; }
 
 .accordion-title:hover {
   cursor: pointer; }
 
 .menu-detail {
-  border-bottom: 1.5px dotted #d8d8d0;
+  border-bottom: 1.5px dotted #D8D8D0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-left: 20px; }
   .menu-detail h5 {
-    padding-top: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    color: #2D2D2B;
     font-size: 13px;
     letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #2D2D2B; }
+    padding-top: 20px;
+    text-transform: uppercase; }
   .menu-detail p {
     font-family: 'Lora', serif;
-    font-size: 13px;
+    font-weight: 200;
     color: #2D2D2B;
+    font-size: 14px;
     letter-spacing: 1px; }
 
 .menu-optional {
@@ -898,8 +903,9 @@ h4 {
     z-index: -1; }
   .menu-optional p {
     font-family: 'Lora', serif;
-    font-size: 13px;
+    font-weight: 200;
     color: #2D2D2B;
+    font-size: 14px;
     letter-spacing: 1px;
     padding: 20px; }
 
@@ -909,14 +915,18 @@ h4 {
   .container-accordion {
     width: auto;
     margin: auto;
-    max-width: 1080px; }
+    max-width: 1080px; } }
+
+@media only screen and (min-width: 1024px) {
   .body-grid {
     position: relative;
     column-count: 2;
     padding: 10px 25px 0px 25px;
     width: auto;
     margin: auto;
-    max-width: 1080px; } }
+    max-width: 1080px; }
+  .menu-detail {
+    padding-left: 0px; } }
 
 /* ------galeria------ */
 .gallery-gap {
@@ -1001,7 +1011,7 @@ h4 {
     text-align: justify; }
 
 .formpd {
-  padding: 0px 50px 50px 50px; }
+  padding: 0px 12px 50px 12px; }
 
 .formbg {
   background-color: #9B9A8E;
