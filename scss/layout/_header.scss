@@ -24,7 +24,7 @@
             }
 
             h2 {
-                @include fontOswald ($colortext, 12px, 4px)
+                @include fontOswald ($colortext, 12px, 4px);
                 margin-bottom: 10px;
             }
         }

@@ -1,6 +1,6 @@
 /* ------footer------ */
 .footer {
-    background: #d8d8d0;
+    background: $colorprimary;
     font-family: 'Oswald', sans-serif;
 
     .footer__socialmedia {
@@ -97,6 +97,7 @@
                     @include fontOswald ($colorcontrast, 12px, 3px);
                     padding: 10px 15px;
                     text-transform: uppercase;
+                    border-radius: 0;
                     border: none;
                     margin: 0;
                     right: 0;

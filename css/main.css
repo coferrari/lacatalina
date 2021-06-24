@@ -488,7 +488,7 @@ template {
 
 /* ------footer------ */
 .footer {
-  background: #d8d8d0;
+  background: #D8D8D0;
   font-family: 'Oswald', sans-serif; }
   .footer .footer__socialmedia {
     text-align: center;
@@ -583,6 +583,7 @@ template {
           letter-spacing: 3px;
           padding: 10px 15px;
           text-transform: uppercase;
+          border-radius: 0;
           border: none;
           margin: 0;
           right: 0;
