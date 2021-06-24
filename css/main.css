@@ -310,7 +310,7 @@ template {
   z-index: 100; }
   .header .header__logo {
     position: relative;
-    background: #d8d8d0;
+    background: #D8D8D0;
     color: #2D2D2B;
     display: flex;
     flex-direction: column;
@@ -322,36 +322,38 @@ template {
       text-align: center; }
       .header .header__logo a h1 {
         font-family: 'Rokkitt', serif;
+        text-transform: uppercase;
+        color: #2D2D2B;
         font-size: 28px;
         font-weight: 200;
-        letter-spacing: .5px;
-        text-transform: uppercase;
-        margin-bottom: 8px; }
+        margin-bottom: 8px;
+        letter-spacing: .5px; }
       .header .header__logo a h2 {
         font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        color: #2D2D2B;
         font-size: 12px;
-        font-weight: 200;
         letter-spacing: 4px;
         margin-bottom: 10px; }
 
 /* ------nav------ */
 .menu {
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border-top: 1px solid white;
   padding: 2px; }
   .menu .menu__navigation {
     align-items: center; }
     .menu .menu__navigation .menu__item a {
-      color: #2D2D2B;
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
+      color: #2D2D2B;
       font-size: 12px;
       letter-spacing: 3px;
-      text-transform: uppercase;
       padding: 15px 25px;
-      position: relative; }
+      position: relative;
+      text-transform: uppercase; }
     .menu .menu__navigation .menu__item a:hover {
-      background: #d8d8d0;
+      background: #D8D8D0;
       transition: 200ms ease-in-out;
       color: white; }
     .menu .menu__navigation .menu__item .menu__subitem {
@@ -362,7 +364,7 @@ template {
       transition: opacity 200ms ease-in-out;
       padding-top: 15px;
       margin-top: 15px;
-      background-color: #d8d8d0;
+      background-color: #D8D8D0;
       opacity: .9; }
       .menu .menu__navigation .menu__item .menu__subitem a {
         font-size: 11px;
@@ -371,14 +373,14 @@ template {
 .dropdown-menu {
   color: #2D2D2B;
   text-align: center;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border: 0;
   transition: opacity 200ms ease-in-out;
   padding-top: 5px;
   margin-top: 5px;
   margin-bottom: 0;
   padding-bottom: 0px;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   opacity: .9; }
 
 .navbar-toggler {
@@ -416,11 +418,11 @@ template {
 
 .booknow {
   text-decoration: none;
-  color: white;
   border: 2px solid white;
   padding: 10px 20px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  color: white;
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase; }
@@ -435,19 +437,23 @@ template {
 .offcanvas {
   background-color: #D8D8D0; }
   .offcanvas h5 {
-    color: #2D2D2B;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    color: #2D2D2B;
     font-size: 16px;
     letter-spacing: 1px;
-    text-transform: uppercase;
     text-align: center;
-    padding: 40px 20px 0px 20px; }
+    padding: 40px 20px 0px 20px;
+    text-transform: uppercase; }
 
 .offcanvas-body ul {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #2D2D2B;
+  font-size: 14px;
+  letter-spacing: 0px;
   list-style-type: none;
-  padding: 10px;
-  font-size: 14px; }
+  padding: 10px; }
   .offcanvas-body ul li {
     color: #2D2D2B;
     text-decoration: none;
@@ -483,19 +489,19 @@ template {
 /* ------footer------ */
 .footer {
   background: #d8d8d0;
-  font-family: 'Lora', serif; }
+  font-family: 'Oswald', sans-serif; }
   .footer .footer__socialmedia {
     text-align: center;
     padding: 10px;
     font-size: 14px; }
   .footer .footer__socialmedia--principal p {
     font-family: 'Rokkitt', serif;
+    text-transform: uppercase;
+    color: #2D2D2B;
     font-size: 16px;
     font-weight: 200;
-    letter-spacing: .5px;
-    text-transform: uppercase;
     margin-bottom: 8px;
-    color: #2D2D2B;
+    letter-spacing: .5px;
     padding: 10px; }
   .footer .footer__socialmedia--secondary {
     display: flex;
@@ -526,13 +532,12 @@ template {
     .footer .footer__flex .footer__flex-item {
       padding: 30px; }
       .footer .footer__flex .footer__flex-item h5 {
-        color: #2D2D2B;
         font-family: 'Oswald', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
+        color: #2D2D2B;
         font-size: 13px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        opacity: .8;
         padding-bottom: 5px; }
       .footer .footer__flex .footer__flex-item ul {
         list-style-type: none;
@@ -552,29 +557,31 @@ template {
         margin: 15px 0px;
         flex-wrap: nowrap;
         max-width: 300px;
-        position: relative; }
+        position: relative;
+        align-items: center; }
         .footer .footer__flex .footer__flex-item .footer__flex-form .footer__flex-email {
           font-family: 'Oswald', sans-serif;
-          font-weight: 200;
-          font-size: 12px;
+          font-weight: 300;
           color: #2D2D2B;
+          font-size: 12px;
+          letter-spacing: 0px;
           background-color: white;
           border: none;
           border-radius: 0;
           padding: 10px; }
         .footer .footer__flex .footer__flex-item .footer__flex-form .footer__flex-email:focus {
           color: #2D2D2B;
-          border-color: #d8d8d0;
+          border-color: #D8D8D0;
           outline: 0;
-          box-shadow: 0 0 0 0.25rem #d8d8d0; }
+          box-shadow: 0 0 0 0.25rem #D8D8D0; }
         .footer .footer__flex .footer__flex-item .footer__flex-form .footer__flex-button {
           background-color: #D8D8D0;
           font-family: 'Oswald', sans-serif;
+          font-weight: 300;
           color: white;
-          padding: 10px 15px;
-          font-weight: 200;
           font-size: 12px;
           letter-spacing: 3px;
+          padding: 10px 15px;
           text-transform: uppercase;
           border: none;
           margin: 0;
@@ -615,10 +622,10 @@ template {
   justify-content: center; }
 
 .overlapse {
-  width: 90%;
+  width: 100%;
   max-width: 1024px;
   display: flex;
-  margin: 100px 0px 100px 0px;
+  margin: 75px 0px;
   padding: 30px;
   gap: 100px;
   flex-direction: column;
@@ -628,19 +635,19 @@ template {
   background-color: #9B9A8E; }
 
 .left {
-  width: 100%;
+  width: 120%;
   height: 600px;
   margin: -150px; }
 
 .overlapse-image-one {
-  background: url(../img/galeria_pinos.jpg) no-repeat center/cover; }
+  background: url(../img/galeria_23.jpg) no-repeat center/cover; }
 
 .overlapse-image-two {
-  background: url(../img/galeria_pastas2.jpg) no-repeat center/cover;
+  background: url(../img/galeria_13.jpg) no-repeat center/cover;
   z-index: -1; }
 
 .overlapse-image-three {
-  background: url(../img/galeria_3.jpg) no-repeat center/cover; }
+  background: url(../img/galeria_24.jpg) no-repeat center/cover; }
 
 .overlapse-text {
   width: 80%;
@@ -651,10 +658,6 @@ template {
   align-items: center;
   list-style-type: none;
   text-align: center;
-  font-family: 'Lora', serif;
-  color: #2D2D2B;
-  line-height: 200%;
-  font-size: 14px;
   padding: 20px; }
 
 @media only screen and (min-width: 768px) {
@@ -671,7 +674,9 @@ template {
   .text-left {
     width: 50%;
     margin: 0;
-    margin-right: -100px; } }
+    margin-right: -100px; }
+  .overlapse {
+    margin: 100px 0px; } }
 
 /* ------habitaciones------ */
 .item {
@@ -683,9 +688,9 @@ template {
   .item div img {
     background-color: #EDE9DE; }
   .item .item-text {
-    color: white;
     font-family: 'Lora', serif;
     font-weight: 200;
+    color: white;
     font-size: 16px;
     letter-spacing: 1px;
     padding: 10px 0px;
@@ -716,16 +721,18 @@ template {
   .image-description h4 {
     padding: 5px 0px 10px 40px;
     font-family: 'Oswald', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
+    color: #2D2D2B;
     font-size: 18px;
     letter-spacing: 2px;
-    color: #2D2D2B;
     border-bottom: 2px solid #D8D8D0; }
   .image-description .hab-description {
     list-style-type: disc;
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     color: #2D2D2B;
     font-size: 15px;
+    letter-spacing: 0px;
     line-height: 180%;
     opacity: .9; }
 
@@ -735,14 +742,14 @@ template {
   padding: 10px;
   text-align: center; }
   .reservar a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 5px;
     font-family: 'Oswald', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
+    color: white;
     font-size: 16px;
     letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
     text-transform: uppercase; }
 
 .reservar:hover {
@@ -764,6 +771,15 @@ template {
 
 #hab-container {
   padding: 40px; }
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #2D2D2B;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 40px 40px 0px 40px; }
 
 @media only screen and (min-width: 768px) {
   #habitaciones {
@@ -918,14 +934,14 @@ template {
 
 /* ------ubicacion------ */
 .section_list {
-  padding: 0px;
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  color: #2D2D2B;
   font-size: 12px;
   letter-spacing: 2px;
+  padding: 0px;
   text-transform: uppercase;
   text-align: center;
-  color: #2D2D2B;
   opacity: .8;
   list-style-type: none; }
 
@@ -975,20 +991,13 @@ template {
   background-color: white; }
   .reservas p {
     font-family: 'Lora', serif;
+    font-weight: 200;
     color: #2D2D2B;
-    letter-spacing: 0;
     font-size: 14px;
+    letter-spacing: 0px;
     line-height: 2;
     padding: 0 20px;
     text-align: justify; }
-  .reservas h3 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 30px 0 15px 0px; }
 
 .formpd {
   padding: 0px 50px 50px 50px; }
@@ -998,12 +1007,12 @@ template {
   max-width: 1080px;
   padding: 30px;
   width: auto;
-  margin: auto;
-  max-width: 1080px; }
+  margin: auto; }
 
 .form-floating {
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  color: #2D2D2B;
   font-size: 12px;
   letter-spacing: 4px;
   text-transform: uppercase; }
@@ -1012,24 +1021,25 @@ template {
   font-weight: 200;
   color: #2D2D2B;
   background-color: white;
-  border: 1px solid #d8d8d0;
+  border: 1px solid #D8D8D0;
   border-radius: 0; }
 
 .form-control:focus {
   color: #2D2D2B;
-  border-color: #d8d8d0;
+  border-color: #D8D8D0;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #d8d8d0; }
+  box-shadow: 0 0 0 0.25rem #D8D8D0; }
 
 .btn-primary--form {
   background-color: white;
   display: block;
   margin: auto;
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  color: #2D2D2B;
   font-size: 14px;
-  padding: 15px 20px;
   letter-spacing: 4px;
+  padding: 15px 20px;
   text-transform: uppercase; }
 
 .col-12 {
@@ -1040,7 +1050,7 @@ template {
 
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: #d8d8d0; }
+  box-shadow: #D8D8D0; }
 
 .btn {
   line-height: 1;
@@ -1049,64 +1059,39 @@ template {
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
 
-.btn-check:focus + .btn, .btn:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem blueviolet; }
-
 .btn-primary {
-  color: #2d2d2b;
-  background-color: #d8d8d0;
+  color: #2D2D2B;
+  background-color: #D8D8D0;
   border-color: #EDE9DE; }
 
 .btn-primary:hover {
   color: white;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border-color: #EDE9DE; }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: white;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border-color: #EDE9DE;
-  box-shadow: 0 0 0 0.25rem #2d2d2b; }
+  box-shadow: 0 0 0 0.25rem #2D2D2B; }
 
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: white;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border-color: #EDE9DE; }
 
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem #2d2d2b; }
+  box-shadow: 0 0 0 0.25rem #D8D8D0; }
 
 .btn-primary:disabled, .btn-primary.disabled {
   color: white;
-  background-color: #d8d8d0;
+  background-color: #D8D8D0;
   border-color: #EDE9DE; }
 
 .conditions {
   background-color: #D8D8D0;
   display: block;
   justify-content: center; }
-
-h4 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 40px 40px 0px 40px; }
-
-.tabla {
-  font-family: 'Lora', serif;
-  color: #2D2D2B;
-  letter-spacing: 0;
-  font-size: 14px;
-  line-height: 2;
-  padding: 20px;
-  text-align: justify;
-  list-style-type: disc; }
-  .tabla table tr td {
-    padding: 5px 15px;
-    border: 1px dotted #D8D8D0; }
 
 .mediosdepago {
   display: flex;
@@ -1118,12 +1103,14 @@ h4 {
     margin: 10px 0px; }
 
 .text {
+  font-family: 'Lora', serif;
+  font-weight: 200;
+  color: #2D2D2B;
+  font-size: 14px;
+  letter-spacing: 0px;
   list-style-type: none;
   padding-top: 20px;
-  font-family: 'Lora', serif;
-  color: #2D2D2B;
   line-height: 200%;
-  font-size: 14px;
   transition: .5s ease;
   opacity: .8; }
 

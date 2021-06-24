@@ -10,57 +10,52 @@
 }
 
 .overlapse {
-    width: 90%;
+    width: 100%;
     max-width: 1024px;
     display: flex;
-    margin: 100px 0px 100px 0px;
+    margin: 75px 0px;
     padding: 30px;
     gap: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: -10;
-    background-color: #9B9A8E;
+    background-color: $colortertiary;
 }
 
 .left {
-    width: 100%;
+    width: 120%;
     height: 600px;
     margin: -150px;
 }
 
 .overlapse-image-one {
-    background: url(../img/galeria_pinos.jpg) no-repeat center / cover;
+    background: url(../img/galeria_23.jpg) no-repeat center / cover;
 }
 
 .overlapse-image-two {
-    background: url(../img/galeria_pastas2.jpg) no-repeat center / cover;
+    background: url(../img/galeria_13.jpg) no-repeat center / cover;
     z-index: -1;
 }
 
 .overlapse-image-three {
-    background: url(../img/galeria_3.jpg) no-repeat center / cover;
+    background: url(../img/galeria_24.jpg) no-repeat center / cover;
 }
 
 .overlapse-text {
     width: 80%;
     margin-top: -100px;
     min-height: 400px;
-    background-color: white;
+    background-color: $colorbg;
     display: flex;
     align-items: center;
     list-style-type: none;
     text-align: center;
-    font-family: 'Lora', serif;
-    color: #2D2D2B;
-    line-height: 200%;
-    font-size: 14px;
     padding: 20px;
 }
 
 
 @media only screen and (min-width: 768px) {
-
     .overlapse-row {
         flex-direction: row;
     }
@@ -80,13 +75,13 @@
         margin: 0;
         margin-right: -100px;
     }
+    .overlapse {
+        margin: 100px 0px;
+    }
+    
+
 }
 
-
-
-@media only screen and (min-width: 1024px) {
-
-}
 
 
 

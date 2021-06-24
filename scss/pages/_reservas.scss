@@ -1,69 +1,50 @@
 /* ------reservas------ */
 .reservas {
-    background-color: white;
+    background-color:$colorbg;
 
     p {
-        font-family: 'Lora', serif;
-        color: #2D2D2B;
-        letter-spacing: 0;
-        font-size: 14px;
+        @include fontLora ($colortext, 14px, 0px);
         line-height: 2;
         padding: 0 20px;
         text-align: justify;
-    }
-    h3 {
-        font-family: 'Oswald', sans-serif;    
-        font-weight: 200;
-        font-size: 18px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 30px 0 15px 0px;
     }
 }
 .formpd {
     padding: 0px 50px 50px 50px;
 }
 .formbg {
-    background-color: #9B9A8E;
+    background-color: $colortertiary;
     max-width: 1080px;
     padding: 30px;
     width: auto;
     margin: auto;
-    max-width: 1080px;
 }
 
 .form-floating {
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 12px;
-    letter-spacing: 4px;
+    @include fontOswald ($colortext, 12px, 4px);
     text-transform: uppercase;
 }
 
 .form-control {
     font-weight: 200;
-    color: #2D2D2B;
-    background-color:white;
-    border: 1px solid #d8d8d0;
+    color: $colortext;
+    background-color:$colorbg;
+    border: 1px solid $colorprimary;
     border-radius: 0;
 }
 
 .form-control:focus {
-    color:#2D2D2B;
-    border-color: #d8d8d0;
+    color: $colortext;
+    border-color: $colorprimary;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem #d8d8d0;
+    box-shadow: 0 0 0 0.25rem $colorprimary;
 }
 .btn-primary--form {
-    background-color: white;
+    background-color:$colorbg;
     display: block;
     margin: auto;
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 14px;
+    @include fontOswald ($colortext, 14px, 4px);
     padding: 15px 20px;
-    letter-spacing: 4px;
     text-transform: uppercase;
 }
 .col-12 {
@@ -71,11 +52,11 @@
 }
 
 .btn:hover {
-    color:white;
+    color:$colorcontrast;
 }
 .btn-check:focus + .btn, .btn:focus {
     outline: 0;
-    box-shadow: #d8d8d0;
+    box-shadow: $colorprimary;
 }
 
 .btn {
@@ -85,38 +66,38 @@
     border-radius: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-check:focus + .btn, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem blueviolet;
-}
+// .btn-check:focus + .btn, .btn:focus {
+//     outline: 0;
+//     box-shadow: 0 0 0 0.25rem blueviolet;
+// }
 .btn-primary {
-    color: #2d2d2b;
-    background-color:#d8d8d0;
-    border-color: #EDE9DE;
+    color: $colortext;
+    background-color:$colorprimary;
+    border-color: $colorsecondary;
 }
 .btn-primary:hover {
-    color:white;
-    background-color:#d8d8d0;
-    border-color: #EDE9DE;
+    color: $colorcontrast;
+    background-color:$colorprimary;
+    border-color: $colorsecondary;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-    color:white;
-    background-color:#d8d8d0;
-    border-color: #EDE9DE;
-    box-shadow: 0 0 0 0.25rem #2d2d2b;
+    color: $colorcontrast;
+    background-color:$colorprimary;
+    border-color: $colorsecondary;
+    box-shadow: 0 0 0 0.25rem $colortext;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-    color:white;
-    background-color:#d8d8d0;
-    border-color: #EDE9DE;
+    color: $colorcontrast;
+    background-color:$colorprimary;
+    border-color: $colorsecondary;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem #2d2d2b;
+    box-shadow: 0 0 0 0.25rem $colorprimary;
 }
 .btn-primary:disabled, .btn-primary.disabled {
-    color:white;
-    background-color:#d8d8d0;
-    border-color: #EDE9DE;
+    color: $colorcontrast;
+    background-color:$colorprimary;
+    border-color: $colorsecondary;
 }
 
 .conditions {
@@ -124,29 +105,7 @@
     display: block;
     justify-content: center;
 }
-h4 {
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 40px 40px 0px 40px;
-}
 
-.tabla {
-    font-family: 'Lora', serif;
-    color: #2D2D2B;
-    letter-spacing: 0;
-    font-size: 14px;
-    line-height: 2;
-    padding: 20px;
-    text-align: justify;
-    list-style-type: disc;
-    table tr td {
-        padding: 5px 15px;
-        border: 1px dotted $colorprimary
-    }
-}
 .mediosdepago {
     display: flex;
     flex-direction: column;
@@ -158,18 +117,15 @@ h4 {
     }
 }
 .text {
+    @include fontLora ($colortext, 14px, 0px);
     list-style-type: none;
     padding-top: 20px;
-    font-family: 'Lora', serif;
-    color: #2D2D2B;
     line-height: 200%;
-    font-size: 14px;
     transition: .5s ease;
     opacity: .8; 
 }
 .accordion-gap {
     padding-bottom: 20px;
-
 }
 
 @media only screen and (min-width: 768px) {

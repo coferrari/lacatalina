@@ -1,7 +1,7 @@
 /* ------footer------ */
 .footer {
     background: #d8d8d0;
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
 
     .footer__socialmedia {
         text-align: center;
@@ -10,13 +10,7 @@
     }
     .footer__socialmedia--principal {
         p {
-            font-family: 'Rokkitt', serif;
-            font-size: 16px;
-            font-weight: 200;
-            letter-spacing: .5px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            color: #2D2D2B;
+            @include fontRokkitt ($colortext, 16px);
             padding: 10px;
         }
     }
@@ -28,7 +22,7 @@
         padding-top: 15px;
         a {
             text-align: start;
-            color: #2D2D2B;
+            color: $colortext;
             padding-right: 10px;
             opacity: .8;
             font-size: 14px;
@@ -56,13 +50,8 @@
             padding: 30px;
 
             h5 {
-                color: #2D2D2B;
-                font-family: 'Oswald', sans-serif;
-                font-weight: 500;
-                font-size: 13px;
-                letter-spacing: 2px;
+                @include fontOswald ($colortext, 13px, 2px);
                 text-transform: uppercase;
-                opacity: .8;
                 padding-bottom: 5px;
                 
             }
@@ -73,46 +62,40 @@
                 max-width: 300px;
 
                 li {
-                    color: #2D2D2B;
+                    color: $colortext;
                     opacity: .8;
                     text-decoration: none;
                     font-size: 14px;
                 }
             }
             .footer__flex-form {
-                border: 1px solid white;
+                border: 1px solid $colorcontrast;
                 display: flex;
                 flex-direction: row;
-                background-color: white;
+                background-color: $colorbg;
                 margin: 15px 0px;
                 flex-wrap: nowrap;
                 max-width: 300px;
                 position: relative;
+                align-items: center;
 
                 .footer__flex-email {
-                    font-family: 'Oswald', sans-serif;
-                    font-weight: 200;
-                    font-size: 12px;
-                    color: #2D2D2B;
-                    background-color:white;
+                    @include fontOswald ($colortext, 12px, 0px);
+                    background-color: $colorbg;
                     border: none;
                     border-radius: 0;
                     padding: 10px;
                 }
                 .footer__flex-email:focus {
-                    color:#2D2D2B;
-                    border-color: #d8d8d0;
+                    color: $colortext;
+                    border-color: $colorprimary;
                     outline: 0;
-                    box-shadow: 0 0 0 0.25rem #d8d8d0;
+                    box-shadow: 0 0 0 0.25rem $colorprimary;
                 }
                 .footer__flex-button {
                     background-color: $colorprimary;
-                    font-family: 'Oswald', sans-serif;
-                    color: white;
+                    @include fontOswald ($colorcontrast, 12px, 3px);
                     padding: 10px 15px;
-                    font-weight: 200;
-                    font-size: 12px;
-                    letter-spacing: 3px;
                     text-transform: uppercase;
                     border: none;
                     margin: 0;
@@ -121,8 +104,7 @@
                 }
                 .footer__flex-button:hover {
                     color: $colorprimary;
-                    background-color: white;
-
+                    background-color: $colorbg;
                 }
             }
         }
@@ -144,20 +126,15 @@
     }
 }
 
-
 @media only screen and (min-width: 768px) {
     .footer {
         .footer__flex {
             flex-wrap: wrap;
             justify-content: start;
             align-items: flex-start;
-    
         }
     }
-
-
 }
-
 
 @media only screen and (min-width: 1024px) {
     .footer {
@@ -166,7 +143,6 @@
             flex-wrap: nowrap;
         }
     }
-
 }
 
 

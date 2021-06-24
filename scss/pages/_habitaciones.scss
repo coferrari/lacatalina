@@ -12,11 +12,7 @@
         background-color: $colorsecondary;
     }
     .item-text {
-        color: white;
-        font-family: 'Lora', serif;
-        font-weight: 200;
-        font-size: 16px;
-        letter-spacing: 1px;
+        @include fontLora ($colorcontrast, 16px, 1px);
         padding: 10px 0px;
         width: 90px;
         text-align: center;
@@ -29,7 +25,7 @@
     height: 50px;
 }
 .carousel-bg {
-    background-color: #9B9A8E;
+    background-color:$colortertiary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,37 +43,27 @@
     margin-bottom: 20px;
     h4 {
         padding: 5px 0px 10px 40px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 200;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: #2D2D2B;
+        @include fontOswald ($colortext, 18px, 2px);
         border-bottom: 2px solid $colorprimary;
     }
     .hab-description {
         list-style-type: disc;
-        font-family: 'Lora', serif;
-        color: #2D2D2B;
-        font-size: 15px;
+        @include fontOswald ($colortext, 15px, 0px);
         line-height: 180%;
         opacity: .9;
     }
 }
 
 .reservar {
-    background-color: #9B9A8E;
+    background-color:$colortertiary;
     display: block;
     padding: 10px;
     text-align: center;
     a {
+        @include fontOswald ($colorcontrast, 16px, 2px);
         display: block;
         text-decoration: none;
-        color: white;
         padding: 5px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 200;
-        font-size: 16px;
-        letter-spacing: 2px;
         text-transform: uppercase;
     }
 }
@@ -87,7 +73,7 @@
 }
 
 .habitaciones {
-    background-color: white;
+    background-color:$colorbg;
 
 }
 .rooms {
@@ -98,11 +84,16 @@
     gap: 20px;
 }
 .card {
-    background-color: white;
+    background-color:$colorbg;
 }
 
 #hab-container {
     padding: 40px;
+}
+h4 {
+    @include fontOswald ($colortext, 16px, 1px);
+    text-transform: uppercase;
+    padding: 40px 40px 0px 40px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,14 +1,10 @@
 /* ------ubicacion------ */
 
 .section_list {
+    @include fontOswald ($colortext, 12px, 2px);
     padding: 0px;
-    font-family: 'Oswald', sans-serif;    
-    font-weight: 200;
-    font-size: 12px;
-    letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    color: #2D2D2B;
     opacity: .8;
     list-style-type: none;
 }

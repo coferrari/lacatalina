@@ -1,0 +1,25 @@
+@mixin fontOswald($color, $fontSize, $letterSpacing) {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: $color;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin fontRokkitt ($color, $fontSize) {
+    font-family: 'Rokkitt', serif;
+    text-transform: uppercase;
+    color: $color;
+    font-size: $fontSize;
+    font-weight: 200;
+    margin-bottom: 8px;
+    letter-spacing: .5px;
+}
+
+@mixin fontLora ($color, $fontSize, $letterSpacing) {
+    font-family: 'Lora', serif;
+    font-weight: 200;
+    color: $color;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;   
+}
