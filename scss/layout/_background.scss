@@ -77,6 +77,7 @@
     border-radius: 0;
 }
 .alertcovid-text {
+    @include fontOswald ($colorcontrast, 16px, 0px);
     opacity: .9;
     color: $colorcontrast;
     padding-right: 10px;
