@@ -88,6 +88,25 @@
 }
 
 
+@media only screen and (min-width: 1200px) {
+    .background {
+        height: 90vh;
+    }
+    .source {
+        top: 15px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .background {
+        height: 70vh;
+    }
+    .source {
+        top: 15px;
+    }
+}
+
+
 
 
 
